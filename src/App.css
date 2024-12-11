@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.localNavItems {
+  animation: slideDown 0.8s ease-out forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* animation for LocalNav... */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.iconRotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in;
+}
+
+.iconDefault {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in;
+}
+
+.radius {
+  border-radius: 200px;
+  border: 2px solid #ddd;
+}
+
+/* for responsive  */
+@media screen and (min-width: 750px) {
+  .cardWrapper {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 10px;
+  }
+}
+
+@keyframes fadeContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation: 0.8s fadeContent;
+}
